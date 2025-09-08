@@ -1,0 +1,20 @@
+{
+  "name": "ajs-image-carousel",
+  "version": "1.0.0",
+  "description": "a NPM package for making image carousels",
+  "homepage": "https://github.com/aboodJS/ajs-image-carousel#readme",
+  "bugs": {
+    "url": "https://github.com/aboodJS/ajs-image-carousel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aboodJS/ajs-image-carousel.git"
+  },
+  "license": "GPL-3.0-only",
+  "author": "Abdallah Alsawafen",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

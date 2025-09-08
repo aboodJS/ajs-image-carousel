@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Test</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        overflow-x: hidden;
+        margin: 0;
+        width: 100vw;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }
+
+      main {
+        overflow-x: hidden;
+        height: 500px;
+        display: flex;
+        justify-self: center;
+      }
+
+      img {
+        object-fit: contain;
+        width: 400px;
+      }
+
+      section {
+        overflow-x: hidden;
+        height: 500px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .arrow-btn {
+        z-index: 1;
+        cursor: pointer;
+        font-size: 3rem;
+      }
+
+      .disabled {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="arrow-btn" id="back-btn">⟵</div>
+      <main id="scroll-container">
+        <img
+          src="https://cdn.pixabay.com/photo/2020/05/17/23/09/foal-5183837_1280.jpg"
+          alt=""
+        /><img
+          class="disabled"
+          src="https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_1280.jpg"
+          alt=""
+        /><img
+          class="disabled"
+          src="https://cdn.pixabay.com/photo/2018/11/09/08/08/forest-3804001_960_720.jpg"
+          alt=""
+        /><img
+          class="disabled"
+          src="https://cdn.pixabay.com/photo/2018/02/23/12/38/flower-3175428_1280.jpg"
+          alt=""
+        /><img
+          class="disabled"
+          src="https://cdn.pixabay.com/photo/2023/09/01/01/15/mantis-8226119_1280.jpg"
+          alt=""
+        />
+      </main>
+      <div class="arrow-btn" id="forward-btn">⟶</div>
+    </section>
+  </body>
+  <script src="testing.js" type="module"></script>
+</html>
