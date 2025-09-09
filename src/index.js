@@ -6,9 +6,9 @@ function nextSlide(slidesArr) {
     counter = 0;
   }
   slidesArr.forEach((i) => {
-    i.classList.add("disabled");
+    i.style.display = "none";
   });
-  slidesArr[counter].classList.remove("disabled");
+  slidesArr[counter].style.display = "block";
   console.log(slidesArr[counter]);
   console.log(counter);
 }
@@ -20,9 +20,10 @@ function previousSlide(slidesArr) {
     counter = slidesArr.length - 1;
   }
   slidesArr.forEach((i) => {
-    i.classList.add("disabled");
+    i.style.display = "none";
   });
-  slidesArr[counter].classList.remove("disabled");
+  slidesArr[counter].style.display = "block";
+  slidesArr[counter].style.transition;
   console.log(slidesArr[counter]);
   console.log(counter);
 }
