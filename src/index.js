@@ -1,3 +1,6 @@
+const backBtn = document.querySelector("#back-btn");
+const forwardBtn = document.querySelector("#forward-btn");
+
 let counter = 0;
 function nextSlide(slidesArr) {
   if (counter < slidesArr.length - 1) {
@@ -28,4 +31,4 @@ function previousSlide(slidesArr) {
   console.log(counter);
 }
 
-export { nextSlide, previousSlide };
+export { nextSlide, previousSlide, backBtn, forwardBtn };
