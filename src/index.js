@@ -2,6 +2,7 @@ const backBtn = document.querySelector("#back-btn");
 const forwardBtn = document.querySelector("#forward-btn");
 
 let counter = 0;
+
 function nextSlide(slidesArr) {
   if (counter < slidesArr.length - 1) {
     counter++;
@@ -31,4 +32,8 @@ function previousSlide(slidesArr) {
   console.log(counter);
 }
 
-export { nextSlide, previousSlide, backBtn, forwardBtn };
+function autoSlide(slidesArr, timeOut) {
+  const autoSlider = setInterval(() => nextSlide(slidesArr), timeOut);
+}
+
+export { nextSlide, previousSlide, autoSlide, backBtn, forwardBtn };
