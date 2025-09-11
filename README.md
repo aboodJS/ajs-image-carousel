@@ -17,11 +17,13 @@ npm install ajs-image-carousel
 ```
 
 2. in your JS file import the following
+
    ```
 import { nextSlide, previousSlide, backBtn, forwardBtn } from "./node_modules/ajs-image-carousel/src/index.js"
 ```
 
 3. add the following IDs to your carousel buttons
+
 ```
 <button id="back-btn">
 //code here
